@@ -11,4 +11,9 @@ lsmod | grep bbr
 # restart
 service shadowsocks-libev restart
 
+# show config
+echo -e "\nInit done. Please Add Server:"
+echo -e "\n---------------------------------------\n"
+cat /etc/shadowsocks-libev/config.json
+echo -e "\n---------------------------------------\n"
 
