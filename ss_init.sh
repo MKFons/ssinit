@@ -20,7 +20,7 @@ apt-get install shadowsocks-libev
 ss_pwd=$(cat /proc/sys/kernel/random/uuid)
 cur_ip=$(curl -4 ip.sb)
 
-echo -e "{" >> /etc/shadowsocks-libev/config.json
+echo -e "{" > /etc/shadowsocks-libev/config.json
 echo -e "\t\"server\":\"$cur_ip\"," >> /etc/shadowsocks-libev/config.json
 echo -e "\t\"server_port\":443," >> /etc/shadowsocks-libev/config.json
 echo -e "\t\"local_port\":1080," >> /etc/shadowsocks-libev/config.json
