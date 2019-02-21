@@ -20,3 +20,9 @@ chmod 755 ss_*
 ```
 ./ss_done.sh
 ```
+
+# Optional
+```
+chmod 755 ban_site.sh
+./ban_site.sh
+```
