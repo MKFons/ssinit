@@ -2,7 +2,7 @@
 
 # Server
 ```
-Vultr ubuntu 14.01
+Vultr, ubuntu 14.01
 ```
 
 # Download
