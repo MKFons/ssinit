@@ -23,6 +23,7 @@ chmod 755 ss_*
 
 # Optional
 ```
+wget https://raw.githubusercontent.com/MKFons/ssinit/master/ban_site.sh
 chmod 755 ban_site.sh
 ./ban_site.sh
 ```
