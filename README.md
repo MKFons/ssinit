@@ -1,5 +1,10 @@
 # ssinit
 
+# Server
+```
+Vultr ubuntu 14.01
+```
+
 # Download
 ```
 wget https://raw.githubusercontent.com/MKFons/ssinit/master/ss_init.sh
