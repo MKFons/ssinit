@@ -35,6 +35,16 @@ elif grep -Eqi "Ubuntu" /etc/issue || grep -Eq "Ubuntu" /etc/*-release; then
         apt-get update
         apt install shadowsocks-libev
 
+        # BBR
+        # update kernel
+        wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-image-4.16.0-041600-generic_4.16.0-041600.201804012230_amd64.deb
+        dpkg -i linux-image-4.*.deb
+        # delete 
+        dpkg -l | grep linux-image
+        apt-get purge
+        # update grub
+        update-grub
+
     elif grep -Eqi "16.0" /etc/issue || grep -Eq "16.0" /etc/*-release; then
         echo "Release: 16.04"
 
