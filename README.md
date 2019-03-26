@@ -7,13 +7,7 @@ Vultr, ubuntu 14.01
 
 # Download
 ```
-wget https://raw.githubusercontent.com/MKFons/ssinit/master/ss_init.sh
-wget https://raw.githubusercontent.com/MKFons/ssinit/master/ss_done.sh
-```
-
-# Permission
-```
-chmod 755 ss_*
+mkdir ssinit && cd ssinit && wget https://raw.githubusercontent.com/MKFons/ssinit/master/install.url && chmod 755 *.sh
 ```
 
 # Install
@@ -28,7 +22,6 @@ chmod 755 ss_*
 
 # Optional
 ```
-wget https://raw.githubusercontent.com/MKFons/ssinit/master/ban_site.sh
-chmod 755 ban_site.sh
+wget https://raw.githubusercontent.com/MKFons/ssinit/master/ban_site.sh && chmod 755 ban_site.sh
 ./ban_site.sh
 ```
