@@ -9,21 +9,9 @@ if grep -Eqi "Debian" /etc/issue || grep -Eq "Debian" /etc/*-release; then
     if grep -Eqi "8" /etc/issue || grep -Eq "8" /etc/*-release; then
         echo "Release: 8"
 
-        # Debian 8 安装方法
-        sh -c 'printf "deb http://deb.debian.org/debian jessie-backports main\n" > /etc/apt/sources.list.d/jessie-backports.list'
-        sh -c 'printf "deb http://deb.debian.org/debian jessie-backports-sloppy main" >> /etc/apt/sources.list.d/jessie-backports.list'
-        apt update
-        apt -t jessie-backports-sloppy install shadowsocks-libev
-
-        # BBR
-        # update kernel
-        wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16/linux-image-4.16.0-041600-generic_4.16.0-041600.201804012230_amd64.deb
-        dpkg -i linux-image-4.*.deb
-        # delete 
-        dpkg -l | grep linux-image
-        apt-get purge
-        # update grub
-        update-grub
+        # Debian 8 暂时没有找到可用/简便的安装方法，取消支持
+        echo "The script doesn't support Debian 8"
+        exit
 
     elif grep -Eqi "9" /etc/issue || grep -Eq "9" /etc/*-release; then
         echo "Release: 9"

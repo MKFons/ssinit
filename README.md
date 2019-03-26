@@ -3,12 +3,12 @@
 ## Supported
 Vultr or CloudCone:
 
-* Debian 8, 9 or higher
+* Debian 9 or higher
 * Ubuntu 14.04 LTS, 16.04 LTS, 16.10 or higher
 
 ## Download
 ```
-mkdir ssinit && cd ssinit && wget https://raw.githubusercontent.com/MKFons/ssinit/master/install.url && chmod 755 *.sh
+mkdir ssinit && cd ssinit && wget -i https://raw.githubusercontent.com/MKFons/ssinit/master/install.url && chmod 755 *.sh
 ```
 
 ## Install
