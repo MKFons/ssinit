@@ -2,7 +2,9 @@
 
 # Server
 ```
-Vultr, ubuntu 14.01
+Vultr/ CloudCone:
+* Debian 8/ 9 or higher
+* Ubuntu 14.04/ 16.04 or higher
 ```
 
 # Download
