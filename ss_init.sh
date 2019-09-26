@@ -99,10 +99,11 @@ fi
 
 # config
 ss_pwd=$(cat /proc/sys/kernel/random/uuid)
-cur_ip=$(curl -4 ip.sb)
+# cur_ip=$(curl -4 ip.sb)
 
 echo -e "{" > /etc/shadowsocks-libev/config.json
-echo -e "\t\"server\":\"$cur_ip\"," >> /etc/shadowsocks-libev/config.json
+# echo -e "\t\"server\":\"$cur_ip\"," >> /etc/shadowsocks-libev/config.json
+echo -e "\t\"server\":\"0.0.0.0\"," >> /etc/shadowsocks-libev/config.json
 echo -e "\t\"server_port\":23333," >> /etc/shadowsocks-libev/config.json
 echo -e "\t\"local_port\":1080," >> /etc/shadowsocks-libev/config.json
 echo -e "\t\"password\":\"$ss_pwd\"," >> /etc/shadowsocks-libev/config.json
